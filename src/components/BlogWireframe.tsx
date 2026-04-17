@@ -15,7 +15,7 @@ interface Article {
   content: string;
 }
 
-const API_KEY = '3a363c8bef804c53acf63fae8ef7b24d';
+const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
 const categories = [
   { id: 'general', label: 'World News', category: 'general' },
